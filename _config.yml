@@ -6,13 +6,13 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Lorem ipsum"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
-repository               : "RayeRen/acad-homepage.github.io"
+title                    : "Zhijing Wu"
+description              : "I am a passionate student specializing in Applied Mathematics, with a focus on machine learning and data science. I am working on research projects in compressed sensing, NLP, and climate modeling."
+repository               : "Zhijing-W/Zhijing-W.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
+google_analytics_id      : # get google_analytics_id from https://analytics.google.com/analytics/
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
@@ -21,14 +21,14 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Lorem ipsum"
-  avatar           : "images/android-chrome-512x512.png"
-  bio              : "Lorem ipsum College"
-  location         : "Beijing, China"
-  employer         :
+  name             : "Zhijing Wu"
+  avatar           : "images/your-photo.jpg"  # Replace with your personal photo
+  bio              : "Student at University of Birmingham and Jinan University, specializing in Applied Mathematics and Machine Learning."
+  location         : "Guangzhou, China"
+  employer         : "University of Birmingham, Jinan University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "Lorem@ipsum.com"
+  email            : "philip.wu.zhijing@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "https://github.com/Zhijing-W"
   google_plus      :
   keybase          :
   instagram        :
@@ -48,10 +48,10 @@ author:
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : "http://stackoverflow.com/users/123456/username"
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          :
   vine             :
   weibo            :
   xing             :
