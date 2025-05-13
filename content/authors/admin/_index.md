@@ -41,7 +41,7 @@ profiles:
 education:
   - area: MS in Computer Science
     institution: Columbia University
-    date_start: 2025-09(Expected)
+    date_start: 2025-09
     date_end: 
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
