@@ -43,11 +43,6 @@ education:
     institution: Columbia University
     date_start: 2025-09-01
     date_end: 
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
     
   - area: BSc (Dual-Degree) in Applied Mathematics with Mathematics
     institution: University of Birmingham
@@ -56,10 +51,6 @@ education:
     summary: |
       First-Class Honors
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - area: BSc (Dual-Degree) in Mathematics and Applied Mathematics
     institution: Jinan University
     date_start: 2021-09-01
@@ -67,10 +58,7 @@ education:
     summary: |
       GPA: 3.80/4.25
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
