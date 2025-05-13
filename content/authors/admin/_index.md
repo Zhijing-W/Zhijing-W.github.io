@@ -1,71 +1,71 @@
 ---
 # Display name
-title: 吳健雄
+title: Zhijing (Philip)  Wu 
 
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Zhijing
+last_name: Wu
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🎓
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Director of Cloud Infrastructure
+role: Master's student in Computer Science
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: Columbia University
+    url: https://www.columbia.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:philip.wu.zhijing@gmail.com'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/GetResearchDev
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/Zhijing-W
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/zhijing-philip-wu
   - icon: brands/instagram
     url: https://www.instagram.com/
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: MS in Computer Science
+    institution: Columbia University
+    date_start: 2025.9(Expected)
+    date_end: 
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    
+  - area: BSc (Dual-Degree) in Applied Mathematics with Mathematics
+    institution: University of Birmingham
+    date_start: 2021.9
+    date_end: 2025.6
     summary: |
-      GPA: 3.8/4.0
+      First-Class Honors
 
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: BSc (Dual-Degree) in Mathematics and Applied Mathematics
+    institution: Jinan University
+    date_start: 2021.9
+    date_end: 2025.6
     summary: |
-      GPA: 3.4/4.0
+      GPA: 3.80/4.25
       
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -169,4 +169,5 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+Hey😎！ Welcome to Zhijing (Philip)'s Personal Site.
+Dual-degree student in Applied Mathematics @ University of Birmingham & Jinan University ✈ MS in CS @ Columbia 25fall丨Research interests: NLP, ML, HCI
