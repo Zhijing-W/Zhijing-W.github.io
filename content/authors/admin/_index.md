@@ -168,8 +168,9 @@ awards:
     summary: |
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
+<p style="margin-bottom: 0.5em;">Hey😎! Welcome to Zhijing (Philip)'s personal site🎉.</p>
+<p style="margin-bottom: 0.5em;">Graduating with a dual-degree from the University of Birmingham & Jinan University | 
+Will begin my MS in Computer Science at Columbia this September</p>
+<p>Research interests: <b>NLP (Natural Language Processing), Machine Learning, HCI (Human-Computer Interaction)</b></p>
 
-Hey😎! Welcome to Zhijing (Philip)'s personal site🎉.\ \  
-Dual-degree student in Applied Mathematics @ University of Birmingham & Jinan University ✈ MS in CS @ Columbia 25fall\ \  
-Research interests: NLP, ML, HCI
 
