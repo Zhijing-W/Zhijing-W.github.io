@@ -41,7 +41,7 @@ profiles:
 education:
   - area: MS in Computer Science
     institution: Columbia University
-    date_start: 2025.9(Expected)
+    date_start: 2025-09(Expected)
     date_end: 
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
@@ -51,8 +51,8 @@ education:
     
   - area: BSc (Dual-Degree) in Applied Mathematics with Mathematics
     institution: University of Birmingham
-    date_start: 2021.9
-    date_end: 2025.6
+    date_start: 2021-09
+    date_end: 2025-06
     summary: |
       First-Class Honors
 
@@ -62,8 +62,8 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - area: BSc (Dual-Degree) in Mathematics and Applied Mathematics
     institution: Jinan University
-    date_start: 2021.9
-    date_end: 2025.6
+    date_start: 2021-09
+    date_end: 2025-06
     summary: |
       GPA: 3.80/4.25
       
