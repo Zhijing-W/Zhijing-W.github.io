@@ -59,11 +59,17 @@ education:
     summary: |
       GPA: 3.80/4.25
       
-      
-work:
-  - position: System Operation and Maintenance Engineer, FinTech Department
-    company_name: iFLYTEK Co., Ltd
-    section: Internship
+
+
+experience:
+  # 常规工作条目（默认显示）
+# - title: "Full-Time Job"
+  # company: "Tech Corp"
+  # 实习条目  
+  - title: "Intern - System Engineer"
+    company: "iFLYTEK"
+    # 以下字段标记为实习
+    internship: true   # 🎯自定义字段
     company_url: 'https://www.iflytek.com/en/'
     company_logo: 'custom/UoB'
     date_start: 2023-08-01
