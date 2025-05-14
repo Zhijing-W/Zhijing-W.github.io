@@ -101,7 +101,7 @@ skills:
       - name: Badminton
         description: ''
         percent: 70
-        icon: 🏸
+        icon: 
       - name: Running
         description: ''
         percent: 50
@@ -136,7 +136,7 @@ awards:
     
 ---
 <p style="margin-bottom: 0.5em;">Hey😎! Welcome to Zhijing (Philip)'s personal site🎉.</p>
-<p style="margin-bottom: 0.5em;">1st Class Honours (University of Birmingham) & Dual-Degree (Jinan University) → MSc CS @ Columbia University, Sept. 2025</p>
+<p style="margin-bottom: 0.5em;">1st Class Honours (University of Birmingham) & Dual-Degree (Jinan University) → MS CS @ Columbia University, Sept. 2025</p>
 <p>Research interests: <b>NLP (Natural Language Processing), Machine Learning, HCI (Human-Computer Interaction)</b></p>
 
 
