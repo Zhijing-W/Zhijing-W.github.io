@@ -29,13 +29,14 @@ profiles:
   - icon: at-symbol
     url: 'mailto:philip.wu.zhijing@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/github
-    url: https://github.com/Zhijing-W
+    
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/zhijing-philip-wu
-  - icon: brands/instagram
+    
+  - icon: brands/github
+    url: https://github.com/Zhijing-W
+ 
+  - icon: brands/google-scholar
     url: https://www.instagram.com/philip_zhijingwu/?igsh=ZGpnNHA5YzNnbm9k&utm_source=ig_contact_invite#
 
 education:
