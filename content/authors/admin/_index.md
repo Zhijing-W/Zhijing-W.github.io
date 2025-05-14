@@ -47,6 +47,7 @@ education:
     
   - area: BSc (Dual-Degree) in Applied Mathematics with Mathematics
     institution: University of Birmingham
+    icon: 'custom/UoB'
     date_start: 2021-09-01
     date_end: 2025-06-18
     summary: |
@@ -68,8 +69,7 @@ work:
     company_logo: 'custom/UoB'
     date_start: 2023-08-01
     date_end: '2023-08-22'
-    summary: |2-
-      Responsibilities include:
+    summary: |
       - Utilized Pandas and NumPy for data manipulation; Ensured system stability through regular backups and updates, addressing issues like data retrieval.
       - Conducted customer data analysis using Tableau and Power BI, producing insightful meeting reports.
       - Managed and improved databases by optimizing structures and employing MySQL and MongoDB for storage and query enhancement; Developed backend modules for user management systems.
