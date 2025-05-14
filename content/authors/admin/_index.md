@@ -36,7 +36,7 @@ profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/zhijing-philip-wu
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/philip_zhijingwu/?igsh=ZGpnNHA5YzNnbm9k&utm_source=ig_contact_invite#
 
 education:
   - area: MS in Computer Science
@@ -60,17 +60,18 @@ education:
       
       
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
+  - position: System Operation and Maintenance Engineer, FinTech Department
+    company_name: iFLYTEK Co., Ltd
+    company_url: 'https://www.iflytek.com/en/'
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
+    date_start: 2023-08-01
+    date_end: '2023-08-22'
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Utilized Pandas and NumPy for data manipulation; Ensured system stability through regular backups and updates, addressing issues like data retrieval.
+      - Conducted customer data analysis using Tableau and Power BI, producing insightful meeting reports.
+      - Managed and improved databases by optimizing structures and employing MySQL and MongoDB for storage and query enhancement; Developed backend modules for user management systems.
+      - 
   - position: Backend Software Engineer
     company_name: X
     company_url: ''
