@@ -101,15 +101,15 @@ skills:
       - name: Badminton
         description: ''
         percent: 70
-        icon: 
+        icon: custom/badminton-svgrepo-com
       - name: Running
         description: ''
         percent: 50
-        icon: 🏃
+        icon: custom/run-svgrepo-com
       - name: Fitness 
         description: ''
         percent: 60
-        icon: 🏋
+        icon: custom/fitness-svgrepo-com
 
 languages:
   - name: English
