@@ -95,8 +95,6 @@ skills:
         icon: devicon/pytorch
   
   - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
     items:
       - name: Badminton
         description: ''
