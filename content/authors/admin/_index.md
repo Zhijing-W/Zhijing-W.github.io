@@ -111,7 +111,7 @@ skills:
         percent: 60
         icon: 🏋
 
-languages:jians
+languages:
   - name: English
     percent: 80
   - name: Chinese
