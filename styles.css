@@ -13,8 +13,9 @@
   --line-strong: #a9c9d7;
   --serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
   --body: "Crimson Text", Georgia, "Times New Roman", serif;
+  --cn: "STKaiti", "Kaiti SC", "KaiTi", "KaiTi_GB2312", "Noto Serif SC", serif;
   --sans: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --nav-clearance: 5.65rem;
+  --nav-clearance: 6.9rem;
 }
 
 * {
@@ -26,6 +27,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   overflow-x: hidden;
   min-height: 100vh;
@@ -40,6 +42,10 @@ body {
   font-family: var(--body);
   font-size: 18px;
   line-height: 1.62;
+}
+
+body::after {
+  content: none;
 }
 
 body::before {
@@ -61,6 +67,17 @@ body::before {
 
 body::selection {
   background: var(--green-soft);
+}
+
+.ambient-particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: normal;
 }
 
 a {
@@ -114,6 +131,22 @@ a {
   letter-spacing: 0.01em;
 }
 
+.top-nav .top-nav-name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.48rem;
+  flex: 0 0 auto;
+  font-family: var(--serif);
+  font-size: 1.14rem;
+  letter-spacing: 0;
+}
+
+.name-cn {
+  color: var(--columbia-strong);
+  font-family: var(--cn);
+  font-weight: 600;
+}
+
 .top-nav nav a:hover {
   color: var(--columbia-strong);
   text-decoration: underline;
@@ -122,6 +155,8 @@ a {
 }
 
 .page-shell {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr);
   gap: 2.4rem;
@@ -144,6 +179,7 @@ a {
     var(--ink);
   box-shadow: 0 18px 44px rgba(16, 32, 39, 0.18);
   color: #f7fbfc;
+  transition: top 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
 }
 
 .profile-sidebar::before {
@@ -153,10 +189,9 @@ a {
   pointer-events: none;
   background:
     linear-gradient(90deg, rgba(185, 255, 63, 0.16) 1px, transparent 1px),
-    linear-gradient(rgba(185, 217, 235, 0.1) 1px, transparent 1px),
-    radial-gradient(circle at 88% 10%, rgba(185, 255, 63, 0.34), transparent 7rem);
-  background-size: 28px 28px, 28px 28px, auto;
-  opacity: 0.7;
+    linear-gradient(rgba(185, 255, 63, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px, 28px 28px;
+  opacity: 0.76;
 }
 
 .profile-sidebar > * {
@@ -165,12 +200,16 @@ a {
 }
 
 .profile-photo-frame {
-  width: calc(100% - 1.3rem);
-  margin: 0.65rem;
-  padding: 0;
-  border: 1px solid rgba(185, 217, 235, 0.34);
-  border-radius: 15px;
-  background: transparent;
+  width: calc(100% - 1.2rem);
+  aspect-ratio: 1 / 1.16;
+  margin: 0.6rem;
+  padding: 2px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background:
+    linear-gradient(rgba(10, 23, 28, 0.96), rgba(10, 23, 28, 0.96)) padding-box,
+    conic-gradient(from 135deg, rgba(185, 217, 235, 0.88), rgba(185, 255, 63, 0.55), rgba(55, 127, 171, 0.62), rgba(185, 217, 235, 0.88)) border-box;
+  box-shadow: 0 12px 26px rgba(16, 32, 39, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
   outline: 0;
   overflow: hidden;
 }
@@ -178,10 +217,11 @@ a {
 .profile-photo {
   display: block;
   width: 100%;
+  height: 100%;
   aspect-ratio: 1 / 1.16;
   object-fit: cover;
   object-position: 58% 52%;
-  border-radius: inherit;
+  border-radius: 13px;
   background: #fff;
 }
 
@@ -202,9 +242,16 @@ a {
 }
 
 .sidebar-kicker {
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.18rem;
   color: var(--green);
-  font-style: normal;
+  font-family: var(--body);
+  font-size: 1.03rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0;
+  text-transform: none;
+  text-shadow: 0 0 12px rgba(223, 255, 63, 0.28);
 }
 
 .sidebar-name-block h2 {
@@ -216,6 +263,16 @@ a {
   letter-spacing: 0;
 }
 
+.name-cn {
+  display: inline-block;
+  margin-left: 0.42rem;
+  color: var(--green);
+  font-size: 0.98em;
+  line-height: 1.05;
+  vertical-align: 0.02em;
+  text-shadow: 0 0 14px rgba(223, 255, 63, 0.26);
+}
+
 .sidebar-name-block p:last-child {
   margin: 0.45rem 0 0;
   color: rgba(247, 251, 252, 0.72);
@@ -225,8 +282,8 @@ a {
 
 .sidebar-nav {
   display: grid;
-  gap: 0.2rem;
-  padding: 0.85rem 1rem 0;
+  gap: 0.08rem;
+  padding: 0.72rem 1rem 0;
 }
 
 .sidebar-nav a,
@@ -235,19 +292,20 @@ a {
 }
 
 .sidebar-nav a {
-  padding: 0.48rem 0.55rem;
+  padding: 0.36rem 0.55rem;
   border: 1px solid transparent;
   border-radius: 10px;
   color: rgba(247, 251, 252, 0.86);
   font-family: var(--serif);
   font-size: 0.98rem;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .sidebar-nav a:hover,
 .sidebar-nav a.is-active {
-  border-color: rgba(185, 255, 63, 0.42);
-  background: rgba(185, 255, 63, 0.1);
+  border-color: rgba(215, 255, 69, 0.36);
+  background: rgba(0, 205, 255, 0.08);
   color: #ffffff;
   font-style: italic;
 }
@@ -256,8 +314,8 @@ a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 0.95rem 1rem 1rem;
-  padding-top: 0.95rem;
+  margin: 0.8rem 1rem 0.85rem;
+  padding-top: 0.8rem;
   border-top: 1px solid rgba(185, 217, 235, 0.28);
 }
 
@@ -293,6 +351,7 @@ a {
 .hero-section,
 .page-section {
   background: transparent;
+  scroll-margin-top: calc(var(--nav-clearance) + 1.4rem);
 }
 
 .hero-section {
@@ -885,6 +944,17 @@ h1 {
   }
 }
 
+@keyframes ambient-field-pulse {
+  0%, 100% {
+    filter: saturate(1) brightness(1.03);
+    opacity: 0.22;
+  }
+  50% {
+    filter: saturate(1.16) brightness(1.08);
+    opacity: 0.34;
+  }
+}
+
 .terminal-lab {
   width: min(1120px, calc(100% - 44px));
   margin: 1.1rem auto 2.25rem;
@@ -1352,7 +1422,7 @@ h1 {
 .page-section {
   padding: 1.65rem 0 0.25rem;
   border-top: 1px solid var(--line-strong);
-  scroll-margin-top: 5rem;
+  scroll-margin-top: calc(var(--nav-clearance) + 1.4rem);
 }
 
 .section-heading {
@@ -1636,6 +1706,8 @@ li + li {
 }
 
 .life-shell {
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   padding: 2.2rem 0 4rem;
 }
@@ -1692,6 +1764,26 @@ li + li {
   gap: 0.4rem;
 }
 
+@media (min-width: 1081px) {
+  .page-shell {
+    display: block;
+    width: min(1120px, calc(100% - 44px));
+  }
+
+  .profile-sidebar {
+    position: fixed;
+    top: var(--nav-clearance);
+    left: max(22px, calc((100vw - 1120px) / 2));
+    width: 280px;
+    max-height: calc(100vh - var(--nav-clearance) - 1rem);
+    overflow: hidden;
+  }
+
+  .content {
+    margin-left: calc(280px + 2.4rem);
+  }
+}
+
 @media (max-width: 1080px) {
   .top-nav {
     width: min(100% - 30px, 850px);
@@ -1707,7 +1799,7 @@ li + li {
   .page-shell {
     grid-template-columns: 1fr;
     width: min(100% - 30px, 850px);
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .profile-sidebar {
@@ -1715,54 +1807,61 @@ li + li {
     max-height: none;
     overflow: hidden;
     display: grid;
-    grid-template-columns: minmax(168px, 22%) minmax(0, 1fr);
+    grid-template-columns: minmax(8.8rem, 11.8rem) minmax(0, 1fr);
     grid-template-areas:
       "photo identity"
       "photo nav"
       "photo links";
-    gap: 0 1.2rem;
-    padding: 0;
-    border-bottom: 1px solid var(--line);
+    align-items: start;
+    gap: 0 1rem;
+    padding: 0.85rem 1rem 0.9rem 0.85rem;
   }
 
   .profile-photo-frame {
     grid-area: photo;
-    width: 100%;
-    height: 100%;
-    min-height: 0;
+    width: clamp(8.2rem, 22vw, 10.8rem);
+    height: auto;
+    aspect-ratio: 1 / 1.16;
+    min-height: auto;
     margin: 0;
-    border: 0;
-    border-radius: 17px 0 0 17px;
+    border-radius: 16px;
+    justify-self: start;
   }
 
   .profile-photo {
     height: 100%;
-    aspect-ratio: auto;
+    aspect-ratio: 1 / 1.16;
   }
 
   .sidebar-name-block {
     grid-area: identity;
-    padding: 1rem 1rem 0.7rem 0.2rem;
+    padding: 0.15rem 0 0.55rem;
+    border-bottom: 0;
   }
 
   .sidebar-nav {
     grid-area: nav;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem 0.6rem;
-    padding: 0 1rem 0.8rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem 0.65rem;
+    padding: 0.1rem 0 0;
   }
 
   .sidebar-nav a {
-    padding: 0.2rem 0.5rem;
+    padding: 0.28rem 0.48rem;
   }
 
   .sidebar-links {
     grid-area: links;
-    display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 0.2rem 1rem 1rem 0.2rem;
+    justify-content: flex-start;
+    margin: 0.7rem 0 0;
+    padding-top: 0.7rem;
+  }
+
+  .content {
+    margin-top: 0.35rem;
   }
 
   .timeline-item,
@@ -1775,7 +1874,16 @@ li + li {
 
 @media (max-width: 760px) {
   body {
+    padding-top: 7.75rem;
     font-size: 17px;
+  }
+
+  body::after {
+    opacity: 0.16;
+  }
+
+  .ambient-particles {
+    opacity: 0;
   }
 
   .top-nav {
@@ -1798,35 +1906,44 @@ li + li {
 
   .page-shell {
     width: min(100% - 22px, 560px);
-    padding-top: 1rem;
+    gap: 3.1rem;
+    padding-top: 1.35rem;
   }
 
   .profile-sidebar {
-    display: block;
+    display: grid;
+    grid-template-columns: 8rem minmax(0, 1fr);
+    gap: 0 0.85rem;
+    padding: 0.75rem;
   }
 
   .profile-photo-frame {
-    width: calc(100% - 1.2rem);
+    width: 7.45rem;
     height: auto;
-    min-height: auto;
-    margin: 0.6rem;
-    border: 1px solid rgba(185, 217, 235, 0.34);
-    border-radius: 14px;
+    aspect-ratio: 1 / 1.16;
+    margin: 0;
+    border-radius: 16px;
   }
 
   .profile-photo {
-    aspect-ratio: 4 / 3;
+    height: 100%;
+    aspect-ratio: 1 / 1.16;
+  }
+
+  .sidebar-name-block {
+    padding: 0;
   }
 
   .sidebar-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
+    padding-top: 0.5rem;
   }
 
   .sidebar-links {
-    justify-content: center;
-    margin: 0.95rem 1rem 1rem;
+    justify-content: flex-start;
+    margin: 0.65rem 0 0;
   }
 
   .news-block li {
@@ -1872,8 +1989,51 @@ li + li {
 }
 
 @media (max-width: 460px) {
+  body {
+    padding-top: 9.4rem;
+  }
+
+  .profile-sidebar {
+    grid-template-columns: 6.2rem minmax(0, 1fr);
+    gap: 0 0.68rem;
+    padding: 0.62rem;
+  }
+
+  .profile-photo-frame {
+    width: 5.85rem;
+    height: auto;
+    aspect-ratio: 1 / 1.16;
+  }
+
+  .sidebar-name-block h2 {
+    font-size: 1.08rem;
+  }
+
+  .name-cn {
+    margin-left: 0.24rem;
+  }
+
+  .sidebar-name-block p:last-child {
+    font-size: 0.82rem;
+    line-height: 1.25;
+  }
+
   .sidebar-nav {
     grid-template-columns: 1fr;
+  }
+
+  .sidebar-nav a {
+    padding: 0.2rem 0.34rem;
+    font-size: 0.92rem;
+  }
+
+  .sidebar-links {
+    gap: 0.32rem;
+  }
+
+  .icon-link {
+    width: 1.85rem;
+    height: 1.85rem;
   }
 
   .fold-card summary {
